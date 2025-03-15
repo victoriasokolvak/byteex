@@ -15,3 +15,7 @@ body {
 .gradient-block {
   background-image: linear-gradient(to top, #F9F0E5, #F9F0E54F 31%);
 }
+
+.loungewear-section {
+  background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+}

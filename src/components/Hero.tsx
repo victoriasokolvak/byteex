@@ -48,7 +48,7 @@ export const Hero = () => {
         </p>
       </div>
 
-      <div className="flex justify-center w-full max-w-[1400px] mx-auto">
+      <div className="flex justify-center w-full max-w-[1400px] mx-auto pb-[86px] lg:pb-[60px]">
         <div className="flex flex-col justify-center">
           <div className="relative mx-auto lg:mx-0 w-[200px] h-9 mt-3.5 lg:mt-8">
             <Image 
