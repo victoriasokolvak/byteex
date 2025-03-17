@@ -30,4 +30,3 @@ export const logos = [
     className: "h-[30px] xl:h-[58px] w-[116px] xl:w-[192px]",
   },
 ];
-
