@@ -2,8 +2,8 @@ import Image from "next/image";
 import { SunMoonIcon } from "./ui/SunMoonIcon";
 import { CartIcon } from "./ui/CartIcon";
 import { WavesIcon } from "./ui/WavesIcon";
-import { ArrowIcon } from "./ui/ArrowIcon";
 import { imageData } from "@/constants/heroImagesData";
+import { ChooseOutfitButton } from "./ChooseOutfitButton";
 
 export const Hero = () => {
   const iconData = [
@@ -57,10 +57,7 @@ export const Hero = () => {
               </div>
 
               <div className="flex justify-center lg:justify-start mt-7 xl:mt-9">
-                <button className="flex items-center gap-4 py-[16px] px-[70px] rounded-[5px] bg-[#01005B] text-[18px] text-white hover:cursor-pointer">
-                  Customize Your Outfit
-                  <ArrowIcon />
-                </button>
+                <ChooseOutfitButton />
               </div>
             </div>
 

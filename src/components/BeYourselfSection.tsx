@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ArrowIcon } from "./ui/ArrowIcon";
 import { images } from "@/constants/beYourselfData";
+import { ChooseOutfitButton } from "./ChooseOutfitButton";
 
 export const BeYourselfSection = () => {
   return (
@@ -41,10 +41,7 @@ export const BeYourselfSection = () => {
             </p>
 
             <div className="hidden lg:flex justify-start mt-7">
-              <button className="flex items-center gap-4 py-[16px] px-[70px] rounded-[5px] bg-[#01005B] text-[18px] text-white hover:cursor-pointer">
-                Customize Your Outfit
-                <ArrowIcon />
-              </button>
+              <ChooseOutfitButton />
             </div>
           </div>
         </div>
