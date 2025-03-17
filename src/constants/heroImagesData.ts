@@ -18,7 +18,7 @@ export const imageData = [
 
 export const imageSwiperData = [
   {
-    src: "./img/girl-center.jpg",
+    src: "./img/girl-center-darker.jpg",
     alt: "Girl in a robe",
     className: "h-[224px] w-[144px] xl:h-[422px] xl:w-[260px] border-2 border-white z-10",
   },

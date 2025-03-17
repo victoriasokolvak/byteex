@@ -40,7 +40,7 @@ export const Hero = () => {
           </div>
 
           <h2 className="mt-3.5 xl:mt-[62px] text-[26px] xl:text-[38px] max-w-[592px] text-[#01005B] mx-auto lg:mx-0 text-center lg:text-start">
-            Don’t apologize for being comfortable.
+            Don&apos;t apologize for being comfortable.
           </h2>
 
           <div className="flex flex-col lg:flex-row lg:gap-[100px] xl:gap-[120px] justify-center">
