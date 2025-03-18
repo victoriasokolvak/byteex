@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { logos } from "@/constants/loungewearData";
 import { LeafIcon } from "./ui/LeafIcon";
 import { CartIcon } from "./ui/CartIcon";
@@ -61,9 +61,9 @@ export const LoungewearSection = () => {
             </div>
           )}
 
-          <h2 className="mt-[42px] xl:mt-28 text-[26px] xl:text-[32px] text-[#01005B] mx-auto lg:ml-24 text-center lg:text-start w-[330px] lg:w-full">
+          <h1 className="mt-[42px] xl:mt-28 text-[26px] xl:text-[32px] text-[#01005B] mx-auto lg:ml-24 text-center lg:text-start w-[330px] lg:w-full">
             Loungewear you can be proud of.
-          </h2>
+          </h1>
 
           <div className="flex flex-col lg:flex-row lg:justify-center gap-0 lg:gap-[186px]">
             <div className="flex flex-col gap-6 w-[244px] lg:w-[570px] mx-auto lg:mx-0 order-2 lg:order-1 mt-[60px]">

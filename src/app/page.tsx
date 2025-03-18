@@ -3,6 +3,7 @@ import { ComfortSection } from "@/components/ComfortSection";
 import { Hero } from "@/components/Hero";
 import { ImagesLine } from "@/components/ImagesLine";
 import { LoungewearSection } from "@/components/LoungewearSection";
+import { FAQSection } from "@/components/FAQSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <ComfortSection />
       <ImagesLine />
       <ReviewsSection />
+      <FAQSection />
     </div>
   );
 }
