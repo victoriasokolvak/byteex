@@ -38,8 +38,8 @@ export const Slider = () => {
   }, [thumbsSwiper]);
   
   return (
-    <div className="flex relative flex-col items-center">
-      <div className="relative w-[302px] h-[452px] lg:h-[648px] lg:w-[432px]">
+    <div className="flex relative flex-col items-center w-[302px] h-[452px] xl:h-[648px] xl:w-[432px]">
+      <div className="relative w-[302px] h-[452px] xl:h-[648px] xl:w-[432px]">
         <Swiper
           modules={[Navigation, Thumbs]}
           onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
@@ -87,7 +87,6 @@ export const Slider = () => {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 768px"
                   className="object-cover"
                 />
               </div>
@@ -96,9 +95,9 @@ export const Slider = () => {
         </Swiper>
       </div>
 
-      <div className="absolute flex justify-between w-[352px] lg:w-[504px] top-1/2 -translate-y-1/2">
+      <div className="absolute flex justify-between w-[352px] xl:w-[504px] top-1/2 -translate-y-1/2">
         <button 
-          className="cursor-pointer p-2 lg:p-4 z-20" 
+          className="cursor-pointer p-2 xl:p-4 z-20" 
           onClick={goToPrev} 
           title="Go to previous slide"
           aria-label="Previous slide"
@@ -108,7 +107,7 @@ export const Slider = () => {
           </div>
         </button>
         <button 
-          className="cursor-pointer p-2 lg:p-4 z-20" 
+          className="cursor-pointer p-2 xl:p-4 z-20" 
           onClick={goToNext} 
           title="Go to next slide"
           aria-label="Next slide"

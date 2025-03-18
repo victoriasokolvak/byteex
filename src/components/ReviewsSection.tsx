@@ -37,13 +37,13 @@ export const ReviewsSection = () => {
             spaceBetween={0}
             slidesPerView={1}
             breakpoints={{
-              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 3 },
             }}
             className="w-full max-w-6xl"
           >
             {reviews.map((review) => (
               <SwiperSlide key={review.id} className="p-4">
-                <div className="flex flex-col mx-auto p-9 bg-white shadow-lg rounded-xl border-[1px] border-[#EAEAEA] max-w-[300px] lg:max-w-[338px]">
+                <div className="flex flex-col mx-auto p-9 bg-white shadow-lg rounded-xl border-[1px] border-[#EAEAEA] max-w-[300px] xl:max-w-[338px]">
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-[#1C2E58] rounded-full mr-3.5"></div>
                     <div className="flex flex-col gap-1">
@@ -64,7 +64,7 @@ export const ReviewsSection = () => {
             ))}
           </Swiper>
 
-          <div className="absolute flex justify-between w-[392px] lg:w-[1258px] top-1/2 -translate-y-1/2 z-10">
+          <div className="absolute flex justify-between w-[392px] xl:w-[1258px] top-1/2 -translate-y-1/2 z-10">
             <button 
               className="cursor-pointer p-2 lg:p-4 z-20" 
                 onClick={goToPrev} 

@@ -4,6 +4,7 @@ import { CartIcon } from "./ui/CartIcon";
 import { WavesIcon } from "./ui/WavesIcon";
 import { imageData } from "@/constants/heroImagesData";
 import { ChooseOutfitButton } from "./ChooseOutfitButton";
+import { CustomerReview } from "./CustomerReview";
 
 export const Hero = () => {
   const iconData = [
@@ -28,7 +29,7 @@ export const Hero = () => {
         </p>
       </div>
 
-      <div className="flex justify-center w-full max-w-[1400px] mx-auto pb-[86px] lg:pb-[60px]">
+      <div className="flex justify-center w-full max-w-[1400px] mx-auto pb-[136px] lg:pb-[102px]">
         <div className="flex flex-col justify-center">
           <div className="relative mx-auto lg:mx-0 w-[200px] h-9 mt-3.5 lg:mt-8">
             <Image 
@@ -56,8 +57,9 @@ export const Hero = () => {
                 ))}
               </div>
 
-              <div className="flex justify-center lg:justify-start mt-7 xl:mt-9">
+              <div className="flex justify-center lg:justify-start mt-7 xl:mt-9 relative">
                 <ChooseOutfitButton />
+                <CustomerReview />
               </div>
             </div>
 

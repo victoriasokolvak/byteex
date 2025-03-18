@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { logos } from "@/constants/loungewearData";
 import { LeafIcon } from "./ui/LeafIcon";
 import { CartIcon } from "./ui/CartIcon";
@@ -61,11 +61,11 @@ export const LoungewearSection = () => {
             </div>
           )}
 
-          <h1 className="mt-[42px] xl:mt-28 text-[26px] xl:text-[32px] text-[#01005B] mx-auto lg:ml-24 text-center lg:text-start w-[330px] lg:w-full">
+          <h2 className="mt-[42px] xl:mt-28 xl:ml-22 text-[26px] xl:text-[32px] text-[#01005B] mx-auto text-center xl:text-start w-[330px] lg:w-full">
             Loungewear you can be proud of.
-          </h1>
+          </h2>
 
-          <div className="flex flex-col lg:flex-row lg:justify-center gap-0 lg:gap-[186px]">
+          <div className="flex flex-col lg:flex-row lg:justify-center gap-0 xl:gap-[186px]">
             <div className="flex flex-col gap-6 w-[244px] lg:w-[570px] mx-auto lg:mx-0 order-2 lg:order-1 mt-[60px]">
               {iconData.map((item, index) => (
                 <div key={index} className="flex flex-col lg:flex-row items-start gap-0 lg:gap-8">
@@ -85,7 +85,7 @@ export const LoungewearSection = () => {
               ))}
             </div>
 
-            <div className="flex justify-center order-1 lg:order-2 mt-6 lg:mt-0 lg:ml-8">
+            <div className="flex justify-center items-center order-1 lg:order-2 mt-6 lg:mt-0 lg:ml-8">
               <Slider />
             </div>
           </div>
