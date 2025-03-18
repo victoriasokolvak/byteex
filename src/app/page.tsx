@@ -5,6 +5,7 @@ import { ImagesLine } from "@/components/ImagesLine";
 import { LoungewearSection } from "@/components/LoungewearSection";
 import { FAQSection } from "@/components/FAQSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
+import { GreenImpactSection } from "@/components/GreenImpactSection";
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
       <ImagesLine />
       <ReviewsSection />
       <FAQSection />
+      <GreenImpactSection />
     </div>
   );
 }
