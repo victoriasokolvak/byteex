@@ -6,6 +6,7 @@ import { LoungewearSection } from "@/components/LoungewearSection";
 import { FAQSection } from "@/components/FAQSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { GreenImpactSection } from "@/components/GreenImpactSection";
+import { FinalSection } from "@/components/FinalSection";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <ReviewsSection />
       <FAQSection />
       <GreenImpactSection />
+      <FinalSection />
     </div>
   );
 }

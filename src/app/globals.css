@@ -19,3 +19,7 @@ body {
 .loungewear-section {
   background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
 }
+
+.final-section {
+  background: linear-gradient(0deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+}

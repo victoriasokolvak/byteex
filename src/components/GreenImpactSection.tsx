@@ -29,8 +29,8 @@ export const GreenImpactSection = () => {
               <div className="flex justify-center items-center w-[42px] h-[42px] bg-[#E4E4E4] rounded-full">
                 {item.icon}
               </div>
-              <p className="text-[22px] font-semibold text-[#2A2996] mt-3">{item.value} {item.unit}</p>
-              <p className="text-[#2A2996] text-[14px]">{item.description}</p>
+              <p className="text-[22px] font-semibold text-[#15005B] mt-3">{item.value} {item.unit}</p>
+              <p className="text-[#15005B] text-[14px]">{item.description}</p>
             </div>
             ))}
           </div>
