@@ -36,7 +36,7 @@ export const LoungewearSection = () => {
   ];
 
   return (
-    <section className="loungewear-section w-full flex flex-col items-center justify-center overflow-hidden">
+    <section id="outfit-section" className="loungewear-section w-full flex flex-col items-center justify-center overflow-hidden">
       <div className="flex flex-col justify-center w-full max-w-[1400px] mx-auto lg:pb-[60px]">
         <div className="flex flex-col justify-center text-center">
           <h1 className="text-[15px] lg:text-[20px] text-[#868787] mt-[76px] mb-6">as seen in</h1>
@@ -70,7 +70,11 @@ export const LoungewearSection = () => {
           <div className="flex flex-col lg:flex-row lg:justify-center gap-0 xl:gap-[186px]">
             <div className="flex flex-col gap-6 w-[244px] lg:w-[570px] mx-auto lg:mx-0 order-2 lg:order-1 mt-[60px]">
               {iconData.map((item, index) => (
-                <div key={index} className="flex flex-col lg:flex-row items-start gap-0 lg:gap-8">
+                <div
+                  key={index}
+                  className={`flex flex-col lg:flex-row items-start gap-0 lg:gap-8 pb-8 lg:pb-0 
+                    ${index !== iconData.length - 1 ? "border-b lg:border-0 border-[#C4C4C480]" : ""}`}
+                >
                   <div className="flex justify-center items-center mx-auto lg:mx-0 rounded-full bg-[#F9F0E5] w-[42px] h-[42px] flex-shrink-0">
                     <div className="relative">{item.icon}</div>
                   </div>
@@ -87,8 +91,9 @@ export const LoungewearSection = () => {
               ))}
             </div>
 
-            <div className="flex justify-center items-center order-1 lg:order-2 mt-6 lg:mt-0 lg:ml-8">
+            <div className="flex flex-col justify-center items-center order-1 lg:order-2 mt-6 lg:mt-0 lg:ml-8">
               <Slider />
+              <p className="text-[13px] text-[#676869] mt-3">White Robe</p>
             </div>
           </div>
         </div>
