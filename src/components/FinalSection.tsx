@@ -35,7 +35,7 @@ export const FinalSection = () => {
           </p>
 
             <div className="flex justify-center mt-4 xl:mt-12 h-[244px] xl:h-[422px] items-center">
-              <div className="flex gradient-block h-[100px] w-[70px] xl:w-[134px] xl:h-[189px] -mr-8 xl:-mr-16"></div>
+              <div className="flex gradient-block h-[100px] w-[70px] xl:w-[134px] xl:h-[189px] -mr-10 xl:-mr-16"></div>
               <div className="flex items-center justify-center relative">
                 {imageData?.map((img, index) => (
                   <div key={index} className={`relative ${img.className}`}>
@@ -43,7 +43,7 @@ export const FinalSection = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex gradient-block h-[100px] w-[70px] xl:w-[134px] xl:h-[189px] -ml-8 xl:-ml-16"></div>
+              <div className="flex gradient-block h-[100px] w-[70px] xl:w-[134px] xl:h-[189px] -ml-10 xl:-ml-16"></div>
             </div>
 
           <div className="flex flex-col justify-center mt-10 lg:mt-14">

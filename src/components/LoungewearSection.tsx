@@ -8,6 +8,8 @@ import { CartIcon } from "./ui/CartIcon";
 import { SunMoonIcon } from "./ui/SunMoonIcon";
 import { WavesIcon } from "./ui/WavesIcon";
 import { Slider } from "./Slider";
+import { ChooseOutfitButton } from "./ChooseOutfitButton";
+import { StarIcon } from "./ui/StarIcon";
 
 export const LoungewearSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,7 +37,7 @@ export const LoungewearSection = () => {
 
   return (
     <section className="loungewear-section w-full flex flex-col items-center justify-center overflow-hidden">
-      <div className="flex flex-col justify-center w-full max-w-[1400px] mx-auto pb-10 lg:pb-[60px]">
+      <div className="flex flex-col justify-center w-full max-w-[1400px] mx-auto lg:pb-[60px]">
         <div className="flex flex-col justify-center text-center">
           <h1 className="text-[15px] lg:text-[20px] text-[#868787] mt-[76px] mb-6">as seen in</h1>
 
@@ -91,6 +93,19 @@ export const LoungewearSection = () => {
           </div>
         </div>
       </div>
+        <div className="flex flex-col lg:hidden justify-center mt-10 lg:mt-14 pb-10">
+          <ChooseOutfitButton />
+            <div className="flex justify-center items-center gap-3.5 mt-2.5">
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, index) => (
+                  <div key={index}>
+                    <StarIcon />
+                  </div>
+                ))}
+              </div>
+              <p className="text-[12px] text-[#828282]">Over 500+ 5 Star Reviews Online</p>
+            </div>
+          </div>
     </section>
   );
 };
